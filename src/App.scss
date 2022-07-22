@@ -48,10 +48,6 @@ a::after {
     transform: scale(0.95);
   }
 
-  &:hover {
-    color: #ccc;
-  }
-
   @media (max-width: 800px) {
     cursor: unset;
 

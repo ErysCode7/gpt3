@@ -1,0 +1,119 @@
+.gpt3__header {
+  padding-top: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
+
+  &-content {
+    flex: 1;
+    &_title {
+      width: 100%;
+      font-weight: 800;
+      font-size: 62px;
+      line-height: 75px;
+      /* or 121% */
+      letter-spacing: -0.04em;
+
+      @media (max-width: 768px) {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+
+    &_text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+      color: #81afdd;
+
+      @media (max-width: 1050px) {
+        font-size: 18px;
+      }
+    }
+
+    &_input {
+      width: 100%;
+      height: 73px;
+      display: flex;
+      margin-top: 2rem;
+
+      input {
+        border: none;
+        outline: none;
+        width: 100%;
+        min-height: 50px;
+        background: #052d56;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        color: #fff;
+        text-indent: 20px;
+        border: 2px solid var(--color-footer);
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+
+        @media (max-width: 1050px) {
+          font-size: 18px;
+        }
+      }
+
+      button {
+        width: 174px;
+        min-height: 50px;
+        padding: 0;
+        background: #ff4820;
+        border-radius: 0;
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+      }
+    }
+
+    &__people {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+
+      > img {
+        width: 181.79px;
+        height: 38px;
+      }
+
+      > p {
+        margin-left: 1rem;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 38px;
+        /* identical to box height, or 313% */
+
+        color: #ffffff;
+      }
+    }
+  }
+
+  &-image {
+    flex: 1;
+    img {
+      width: 667.41px;
+      height: 701.59px;
+
+      @media (min-width: 1850px) {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (max-width: 1200px) {
+        width: 630px;
+      }
+
+      @media (max-width: 1050px) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
