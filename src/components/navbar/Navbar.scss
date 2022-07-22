@@ -1,0 +1,149 @@
+.gpt3__navbar {
+  width: 100%;
+  padding: 2rem 6rem;
+
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &-logo_links {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+
+  &-logo {
+    margin-right: 2rem;
+
+    img {
+      width: 62.56px;
+      height: 16.02px;
+    }
+  }
+
+  &-navlinks {
+    display: flex;
+
+    li {
+      padding: 0 1rem;
+
+      a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 50px;
+        /* identical to box height */
+        color: #ffffff;
+
+        &::after {
+          content: "";
+          background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+          width: 100%;
+          height: 3px;
+          transition: transform 300ms ease;
+          transform: scale(0, 1);
+          display: block;
+        }
+
+        &:hover::after {
+          transform: scale(1, 1);
+        }
+      }
+    }
+  }
+
+  //mobile nav
+  &-mobile_navlinks {
+    display: none;
+
+    li {
+      padding: 0;
+    }
+  }
+
+  &-mobile_hamburger {
+    display: none;
+  }
+
+  &-btn {
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      /* identical to box height */
+      margin-right: 1rem;
+      transition: color 300ms ease;
+      color: #ffffff;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .gpt3__navbar-navlinks {
+    display: none;
+  }
+
+  .gpt3__navbar-btn {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .gpt3__navbar-mobile_hamburger {
+    display: flex;
+    margin-left: 1.25rem;
+
+    > .hamburger {
+      font-size: 40px;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        cursor: unset;
+        font-size: 27px;
+      }
+    }
+  }
+
+  .gpt3__navbar-mobile_navlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-footer);
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    top: 125.6px;
+    left: -100%;
+    height: calc(100vh - 125.6px);
+    min-width: 210px;
+    transition: all 600ms ease;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+
+    @media (max-width: 768px) {
+      top: 112px;
+      height: calc(100vh - 112px);
+    }
+
+    &.show {
+      left: 0;
+    }
+
+    li {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .gpt3__navbar-mobile-btn {
+    display: none;
+    @media (max-width: 768px) {
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+    }
+  }
+}

@@ -7,7 +7,56 @@
 
 html,
 body {
+  font-family: var(--font-family);
   font-size: 100%;
   padding: 0;
   margin: 0;
+  background-color: var(--color-bg);
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a,
+a::before,
+a::after {
+  color: unset;
+  text-decoration: none;
+}
+
+.gpt3__button {
+  font-family: var(--font-family);
+  padding: 0.5rem 1rem;
+  background-color: #ff4820;
+  transition: color 300ms ease;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:hover {
+    color: #ccc;
+  }
+
+  @media (max-width: 800px) {
+    cursor: unset;
+
+    &:hover {
+      color: unset;
+    }
+  }
 }
