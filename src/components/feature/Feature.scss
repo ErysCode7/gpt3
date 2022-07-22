@@ -1,0 +1,34 @@
+.gpt3__feature-container {
+  &__title {
+    > div {
+      width: 38px;
+      height: 3px;
+      background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+        #ffffff;
+    }
+
+    > h2 {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 75px;
+      /* identical to box height, or 312% */
+
+      letter-spacing: -0.04em;
+
+      color: #ffffff;
+    }
+  }
+
+  &__text {
+    max-width: 334px;
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      /* or 188% */
+
+      color: #81afdd;
+    }
+  }
+}

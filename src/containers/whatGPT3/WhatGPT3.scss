@@ -1,0 +1,122 @@
+.gpt3__whatgpt3 {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  background: var(--color-footer);
+
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+  );
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  &-feature {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @media (max-width: 1050px) {
+      flex-direction: column;
+    }
+
+    div {
+      top: 1rem;
+      position: absolute;
+      width: 38px;
+      height: 3px;
+      background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+        #ffffff;
+    }
+
+    h2 {
+      margin-right: 2rem;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 75px;
+      /* identical to box height, or 312% */
+
+      letter-spacing: -0.04em;
+
+      color: #ffffff;
+    }
+
+    p {
+      flex: 1;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      /* or 188% */
+      color: #81afdd;
+    }
+  }
+
+  &-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0 2rem;
+
+    &_h1 {
+      max-width: 472px;
+      height: 90px;
+      font-weight: 800;
+      font-size: 34px;
+      line-height: 45px;
+    }
+
+    &_p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+      /* identical to box height, or 188% */
+      color: #ff8a71;
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.125rem;
+    margin-top: 2rem;
+  }
+}

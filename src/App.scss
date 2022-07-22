@@ -50,9 +50,5 @@ a::after {
 
   @media (max-width: 800px) {
     cursor: unset;
-
-    &:hover {
-      color: unset;
-    }
   }
 }

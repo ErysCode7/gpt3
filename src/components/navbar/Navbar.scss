@@ -131,10 +131,11 @@
     transition: all 600ms ease;
     border-radius: 5px;
     box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+    z-index: 9;
 
     @media (max-width: 768px) {
       top: 112px;
-      height: 60%;
+      height: 70%;
     }
 
     &.show {
