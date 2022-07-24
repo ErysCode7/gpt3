@@ -1,0 +1,115 @@
+.gpt3__footer {
+  background-color: var(--color-footer);
+  color: white;
+
+  &-heading {
+    width: 821px;
+
+    margin: 0 auto;
+    margin-bottom: 3rem;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    > h2 {
+      font-weight: 800;
+      font-size: 62px;
+      line-height: 75px;
+      /* or 121% */
+
+      text-align: center;
+      letter-spacing: -0.04em;
+    }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+
+    > button {
+      background-color: transparent;
+      width: 218px;
+      height: 65px;
+      font-family: "Gilroy-Medium";
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #ffffff;
+
+      border: 1px solid #ffffff;
+      cursor: pointer;
+
+      &:active {
+        transform: scale(98%);
+      }
+    }
+  }
+
+  &-links {
+    margin: 3rem 0;
+    display: flex;
+
+    gap: 1rem;
+    padding: 2rem;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+
+    &_logo {
+      flex: 2;
+      width: 168px;
+      height: 85px;
+      > img {
+        width: 118px;
+        height: 30px;
+      }
+
+      > p {
+        font-family: "Gilroy-Medium";
+        font-size: 12px;
+        line-height: 14px;
+
+        color: #ffffff;
+      }
+    }
+
+    &_div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      @media (max-width: 992px) {
+        margin: 2rem 0;
+        gap: 1.25rem;
+      }
+
+      > h4 {
+        margin: 0;
+      }
+
+      li {
+        font-family: "Gilroy-Medium";
+        font-size: 12px;
+        line-height: 14px;
+
+        color: #ffffff;
+      }
+    }
+  }
+
+  &-copyright {
+    text-align: center;
+
+    p {
+      font-family: "Gilroy-Medium";
+      font-size: 12px;
+      line-height: 14px;
+      font-feature-settings: "liga" off;
+
+      color: #ffffff;
+    }
+  }
+}
